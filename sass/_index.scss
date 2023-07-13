@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+
+  .container-image {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .section-lists {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 20%;
+
+    .section-item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 90%;
+
+      .section-title {
+        margin-left: auto;
+        text-align: end;
+        padding: 20px;
+        line-height: 40px;
+        margin-top: 40px;
+
+        h2 {
+          font-size: 1.75rem;
+        }
+
+        span {
+          font-size: 4rem;
+        }
+      }
+
+      .section-profile {
+        margin-right: auto;
+        position: relative;
+        padding: 20px 0;
+        margin-top: -90px;
+        line-height: 30px;
+        font-size: 1.25rem;
+
+        &::after {
+          position: absolute;
+          content: "01";
+          color: black;
+          font-size: 4rem;
+          right: -510px;
+          top: 150px;
+        }
+      }
+
+      .section-intro {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        line-height: 30px;
+        font-size: 1.35rem;
+        border-bottom: 2px dotted grey;
+      }
+
+      .section-image {
+        padding: 40px 0;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .section-subtitle {
+        margin-right: auto;
+        padding: 20px 0;
+        line-height: 30px;
+        font-size: 1.35rem;
+        color:#4b5c7b;
+      }
+
+      .section-subintro {
+        margin-left: auto;
+        text-align: start;
+        padding: 20px;
+        line-height: 40px;
+        font-size: 1.35rem;
+       
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+  .container {
+    .section-lists {
+      top: 30%;
+      left: 20%;
+
+      .section-item {
+        width: 70%;
+
+        .section-profile {
+          font-size: 1.25rem;
+
+          &::after {
+            right: -185px;
+            top: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .container {}
+}
