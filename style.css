@@ -215,7 +215,7 @@ table {
   justify-content: center;
 }
 .container .section-list .section-item .item-container .item-title {
-  margin: 0 26px;
+  margin: 0 13px;
   display: flex;
   flex-direction: column;
   width: cal(100%/3);
@@ -236,20 +236,53 @@ table {
 .container .section-list .section-item .item-container .item-intro p {
   padding-bottom: 13px;
 }
+.container .section-list .section-item .section-chapter {
+  display: flex;
+  justify-content: center;
+}
+.container .section-list .section-item .section-chapter .chapter-intro {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6e6e6e;
+  padding: 20px 0px;
+  text-align: center;
+  line-height: 1.5;
+}
+.container .section-list .section-item .section-chapter .chapter-intro span {
+  display: inline-block;
+  padding: 13px 0;
+}
+.container .section-list .section-item .question-container {
+  display: flex;
+  flex-direction: column;
+}
+.container .section-list .section-item .question-container .question {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 2.5px;
+  color: #16668c;
+  padding: 0px 0px 0px 40px;
+}
+.container .section-list .section-item .question-container .answer {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6e6e6e;
+  line-height: 1.5;
+  text-align: justify;
+  letter-spacing: 2.5px;
+  padding: 20px 40px 20px 138px;
+}
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
-  .container .section-lists {
-    top: 30%;
-    left: 20%;
+  .container .section-list .section-profile .profile-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .container .section-lists .section-item {
-    width: 70%;
-  }
-  .container .section-lists .section-item .section-profile {
-    font-size: 1.25rem;
-  }
-  .container .section-lists .section-item .section-profile::after {
-    right: -185px;
-    top: 150px;
+}
+@media only screen and (max-width: 414px) {
+  .container .section-list .section-profile .profile-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */

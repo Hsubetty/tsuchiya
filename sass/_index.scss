@@ -23,7 +23,6 @@
     padding: 50px;
 
     .section-profile {
-
       .profile-container {
         display: flex;
         justify-content: space-between;
@@ -85,14 +84,15 @@
       .item-container {
         display: flex;
         justify-content: center;
-   
+
         .item-title {
-          margin: 0 26px ;
+          margin: 0 13px;
           display: flex;
           flex-direction: column;
           width: cal(100% / 3);
           text-align: right;
-          p{
+
+          p {
             padding-bottom: 13px;
           }
         }
@@ -105,9 +105,53 @@
           line-height: 1.5;
           text-align: justify;
           width: calc(2/3 * 100%);
-          p{
+
+          p {
             padding-bottom: 13px;
           }
+        }
+      }
+
+      .section-chapter {
+        display: flex;
+        justify-content: center;
+
+        .chapter-intro {
+          font-size: 13px;
+          font-weight: 400;
+          color: #6e6e6e;
+          padding: 20px 0px;
+          text-align: center;
+          line-height: 1.5;
+
+          span {
+            display: inline-block;
+            padding: 13px 0;
+          }
+        }
+      }
+
+      .question-container {
+        display: flex;
+        flex-direction: column;
+
+        .question {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.5;
+          letter-spacing: 2.5px;
+          color: #16668c;
+          padding: 0px 0px 0px 40px;
+        }
+
+        .answer {
+          font-size: 13px;
+          font-weight: 400;
+          color: #6e6e6e;
+          line-height: 1.5;
+          text-align: justify;
+          letter-spacing: 2.5px;
+          padding: 20px 40px 20px 138px;
         }
       }
     }
@@ -116,20 +160,11 @@
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
   .container {
-    .section-lists {
-      top: 30%;
-      left: 20%;
-
-      .section-item {
-        width: 70%;
-
-        .section-profile {
-          font-size: 1.25rem;
-
-          &::after {
-            right: -185px;
-            top: 150px;
-          }
+    .section-list {
+      .section-profile {
+        .profile-container {
+          display: flex;
+          flex-direction: column-reverse;
         }
       }
     }
@@ -138,5 +173,14 @@
 
 
 @media only screen and (max-width: 414px) {
-  .container {}
+  .container {
+    .section-list {
+      .section-profile {
+        .profile-container {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
 }
