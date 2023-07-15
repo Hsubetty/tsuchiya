@@ -231,6 +231,7 @@ table {
   line-height: 1.5;
   text-align: justify;
   width: 66.6666666667%;
+  padding-bottom: 20px;
 }
 .container .section-list .section-item .item-container .item-intro p {
   padding-bottom: 13px;
@@ -246,10 +247,25 @@ table {
   padding: 20px 0px;
   text-align: center;
   line-height: 1.5;
+  position: relative;
 }
-.container .section-list .section-item .section-chapter .chapter-intro span {
-  display: inline-block;
-  padding: 13px 0;
+.container .section-list .section-item .section-chapter .chapter-intro::before {
+  content: "";
+  position: absolute;
+  left: 33.3333333333%;
+  top: 0;
+  height: 1px;
+  width: 33%;
+  border-bottom: 2px dotted var(--primary-color-1);
+}
+.container .section-list .section-item .section-chapter .chapter-intro::after {
+  content: "";
+  position: absolute;
+  left: 33.3333333333%;
+  bottom: 0;
+  height: 1px;
+  width: 33%;
+  border-bottom: 2px dotted var(--primary-color-1);
 }
 .container .section-list .section-item .question-container {
   display: flex;
@@ -273,12 +289,13 @@ table {
   padding: 20px 40px 20px 138px;
 }
 
-@media only screen and (min-width: 415px) and (max-width: 1024px) {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
   .container {
     height: 60vh;
+    background-position: 80% 20%;
   }
   .container .section-list {
-    width: 100%;
+    width: 90%;
     max-width: 705px;
     top: 50%;
     left: 50%;
@@ -292,7 +309,7 @@ table {
 @media only screen and (max-width: 414px) {
   .container {
     height: 50vh;
-    background-position: 70% 20%;
+    background-position: 80% 20%;
   }
   .container .section-list {
     width: 90%;
