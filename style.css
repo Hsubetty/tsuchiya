@@ -135,7 +135,9 @@ table {
 }
 
 :root {
-  --primary-color-1: pink;
+  --primary-color-1: #6e6e6e;
+  --primary-color-2: #20598E;
+  --primary-color-4: #fff;
 }
 
 .container {
@@ -154,20 +156,20 @@ table {
   left: 50%;
   transform: translate(-50%, 3%);
   background-color: #fff;
-  border: #4b5c7b 1px solid;
+  border: var(--primary-color-1) 1px solid;
   max-width: 705px;
   margin: 0 auto;
   padding: 50px;
 }
 .container .section-list .section-profile {
-  border-bottom: 2px dotted grey;
+  border-bottom: 2px dotted var(--primary-color-1);
 }
 .container .section-list .section-profile .profile-container {
   display: flex;
   justify-content: space-between;
 }
 .container .section-list .section-profile .profile-container .profile-info {
-  color: #6e6e6e;
+  color: var(--primary-color-1);
   padding: 32px 0 0 0;
   font-size: 13px;
   font-weight: 400;
@@ -192,7 +194,7 @@ table {
 }
 .container .section-list .section-profile .profile-intro {
   padding: 55px 0;
-  color: #6e6e6e;
+  color: var(--primary-color-1);
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -224,7 +226,7 @@ table {
 .container .section-list .section-item .item-container .item-intro {
   font-size: 13px;
   font-weight: 400;
-  color: #6e6e6e;
+  color: var(--primary-color-1);
   letter-spacing: 2.5px;
   line-height: 1.5;
   text-align: justify;
@@ -240,7 +242,7 @@ table {
 .container .section-list .section-item .section-chapter .chapter-intro {
   font-size: 13px;
   font-weight: 400;
-  color: #6e6e6e;
+  color: var(--primary-color-1);
   padding: 20px 0px;
   text-align: center;
   line-height: 1.5;
@@ -258,13 +260,13 @@ table {
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 2.5px;
-  color: #16668c;
+  color: var(--primary-color-2);
   padding: 0px 0px 0px 40px;
 }
 .container .section-list .section-item .question-container .answer {
   font-size: 13px;
   font-weight: 400;
-  color: #6e6e6e;
+  color: var(--primary-color-1);
   line-height: 1.5;
   text-align: justify;
   letter-spacing: 2.5px;
@@ -298,9 +300,48 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
+    padding: 20px;
   }
   .container .section-list .section-profile .profile-container {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .sub-title {
+    text-align: start;
+    padding-left: 20px;
+  }
+  .container .section-list .section-item .item-container {
+    flex-direction: column;
+  }
+  .container .section-list .section-item .item-container .item-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    margin: 0 0px;
+    text-align: start;
+  }
+  .container .section-list .section-item .item-container .item-title p {
+    padding-right: 4px;
+  }
+  .container .section-list .section-item .item-container .item-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .container .section-list .section-item .section-profile .profile-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container .section-list .section-item .question-container .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: start;
+  }
+  .container .section-list .section-item .question-container .answer {
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
