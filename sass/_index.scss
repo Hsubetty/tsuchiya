@@ -1,22 +1,19 @@
 .container {
   width: 100%;
-  overflow: hidden;
-
-  .container-image {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    height: 68vh;
-
-    img {
-      width: 110%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 0px -120px;
-    }
-  }
+  height: 90vh;
+  background-image: url(/images/background-dulles.jpg);
+  background-position: right 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
 
   .section-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3%);
+    background-color: #fff;
     border: #4b5c7b 1px solid;
     max-width: 705px;
     margin: 0 auto;
@@ -160,7 +157,13 @@
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
   .container {
+    height: 60vh;
     .section-list {
+      width: 100%;
+      max-width: 705px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 1%);
       .section-profile {
         .profile-container {
           display: flex;
@@ -174,7 +177,14 @@
 
 @media only screen and (max-width: 414px) {
   .container {
+    height: 50vh;
+    background-position: 70% 20%;
     .section-list {
+      width: 90%;
+      max-width: 414px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
       .section-profile {
         .profile-container {
           display: flex;
