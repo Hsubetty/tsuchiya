@@ -152,7 +152,7 @@ table {
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   max-width: 705px;
-  margin: 425px auto 20px auto;
+  margin: 450px auto 20px auto;
   padding: 50px;
 }
 .container .section-list .section-profile {
@@ -337,7 +337,7 @@ table {
     width: 90%;
     max-width: 414px;
     padding: 20px;
-    margin: 210px auto 20px auto;
+    margin: 220px auto 20px auto;
   }
   .container .section-list .section-profile .profile-container {
     display: flex;
