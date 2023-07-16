@@ -143,7 +143,7 @@ table {
 .container {
   width: 100%;
   height: 90vh;
-  background-image: url(/images/background-dulles.jpg);
+  background-image: url(/images/background-dulles-1.webp);
   background-position: right 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,25 +291,59 @@ table {
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   .container {
-    height: 60vh;
-    background-position: 80% 20%;
+    height: 80vh;
+    background-position: 60% 20%;
   }
   .container .section-list {
     width: 90%;
     max-width: 705px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 1%);
+    transform: translate(-50%, 0%);
   }
   .container .section-list .section-profile .profile-container {
     display: flex;
     flex-direction: column-reverse;
   }
+  .container .section-list .section-item .item-container {
+    flex-direction: column;
+  }
+  .container .section-list .section-item .item-container .item-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    margin: 0 0px;
+    text-align: start;
+  }
+  .container .section-list .section-item .item-container .item-title p {
+    padding-right: 4px;
+  }
+  .container .section-list .section-item .item-container .item-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .container .section-list .section-item .section-profile .profile-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container .section-list .section-item .question-container .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: start;
+  }
+  .container .section-list .section-item .question-container .answer {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 414px) {
   .container {
     height: 50vh;
-    background-position: 80% 20%;
+    background-position: 60% 20%;
   }
   .container .section-list {
     width: 90%;
@@ -326,6 +360,14 @@ table {
   .container .section-list .section-profile .profile-container .profile-title .sub-title {
     text-align: start;
     padding-left: 20px;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .title {
+    text-align: start;
+    padding-left: 95px;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .page {
+    text-align: start;
+    padding-left: 230px;
   }
   .container .section-list .section-item .item-container {
     flex-direction: column;
