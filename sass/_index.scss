@@ -173,7 +173,7 @@
     .section-list {
       width: 90%;
       max-width: 768px;
-      margin: 230px auto 20px auto;
+      margin: 255px auto 20px auto;
 
       .section-profile {
         .profile-container {
@@ -235,7 +235,7 @@
 @media only screen and (max-width: 414px) {
   .container {
     background-size: 100%, 165% auto;
-
+    background-position: left top 90vh, left 60% top;
     .section-list {
       width: 90%;
       max-width: 414px;
