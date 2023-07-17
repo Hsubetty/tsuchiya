@@ -164,7 +164,7 @@ table {
 }
 .container .section-list .section-profile .profile-container .profile-info {
   color: var(--primary-color-1);
-  padding: 32px 0 0 0;
+  padding: 40px 0 0 0;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -175,16 +175,16 @@ table {
 }
 .container .section-list .section-profile .profile-container .profile-title .sub-title {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .container .section-list .section-profile .profile-container .profile-title .title {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 .container .section-list .section-profile .profile-container .profile-title .page {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
-  padding: 28px 0 0 0;
 }
 .container .section-list .section-profile .profile-intro {
   padding: 55px 0;
@@ -225,7 +225,7 @@ table {
   line-height: 1.5;
   text-align: justify;
   width: 66.6666666667%;
-  padding-bottom: 20px;
+  padding: 0 0 20px 10px;
 }
 .container .section-list .section-item .item-container .item-intro p {
   padding-bottom: 13px;
@@ -237,7 +237,7 @@ table {
 .container .section-list .section-item .section-chapter .chapter-intro {
   font-size: 13px;
   font-weight: 400;
-  color: var(--primary-color-1);
+  color: var(--primary-color-2);
   padding: 20px 0px;
   text-align: center;
   line-height: 1.5;
@@ -250,7 +250,7 @@ table {
   top: 0;
   height: 1px;
   width: 33%;
-  border-bottom: 2px dotted var(--primary-color-1);
+  border-bottom: 2px dotted var(--primary-color-2);
 }
 .container .section-list .section-item .section-chapter .chapter-intro::after {
   content: "";
@@ -259,7 +259,7 @@ table {
   bottom: 0;
   height: 1px;
   width: 33%;
-  border-bottom: 2px dotted var(--primary-color-1);
+  border-bottom: 2px dotted var(--primary-color-2);
 }
 .container .section-list .section-item .question-container {
   display: flex;
@@ -280,7 +280,7 @@ table {
   line-height: 1.5;
   text-align: justify;
   letter-spacing: 2.5px;
-  padding: 20px 40px 20px 138px;
+  padding: 20px 40px 20px 128px;
 }
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -292,6 +292,27 @@ table {
   .container .section-list .section-profile .profile-container {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .container .section-list .section-profile .profile-container .profile-info {
+    padding: 32px 20px 0;
+  }
+  .container .section-list .section-profile .profile-container .profile-title {
+    padding: 0 20px;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .sub-title {
+    font-size: 32px;
+    text-align: start;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .title {
+    font-size: 16px;
+    text-align: start;
+  }
+  .container .section-list .section-profile .profile-container .profile-title .page {
+    font-size: 16px;
+    text-align: end;
+  }
+  .container .section-list .section-profile .profile-intro {
+    padding: 25px 20px;
   }
   .container .section-list .section-item .item-container {
     flex-direction: column;
@@ -312,10 +333,6 @@ table {
     display: flex;
     flex-direction: column;
     padding: 20px;
-  }
-  .container .section-list .section-item .section-profile .profile-container {
-    display: flex;
-    flex-direction: column-reverse;
   }
   .container .section-list .section-item .question-container .question {
     display: flex;
@@ -343,17 +360,26 @@ table {
     display: flex;
     flex-direction: column-reverse;
   }
+  .container .section-list .section-profile .profile-container .profile-info {
+    padding: 32px 20px 0;
+  }
   .container .section-list .section-profile .profile-container .profile-title .sub-title {
+    font-size: 32px;
     text-align: start;
     padding-left: 20px;
   }
   .container .section-list .section-profile .profile-container .profile-title .title {
+    font-size: 16px;
     text-align: start;
-    padding-left: 95px;
+    padding-left: 20px;
   }
   .container .section-list .section-profile .profile-container .profile-title .page {
+    font-size: 16px;
     text-align: start;
-    padding-left: 230px;
+    padding-left: 20px;
+  }
+  .container .section-list .section-profile .profile-intro {
+    padding: 25px 20px;
   }
   .container .section-list .section-item .item-container {
     flex-direction: column;
