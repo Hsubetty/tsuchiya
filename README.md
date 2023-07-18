@@ -1,5 +1,8 @@
 # tsuchiya 
 
+GitHub Pages:
+https://hsubetty.github.io/tsuchiya/
+
 專案敘述：
 這是一個使用 HTML 和 SCSS 所製作的 RWD（響應式網頁設計）切版專案。
 該網頁應用了不同的 CSS 樣式設定，以在不同螢幕寬度範圍下呈現不同的外觀和版面配置。
